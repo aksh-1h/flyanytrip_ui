@@ -41,7 +41,7 @@ export default function HowItWorks() {
               className="relative flex flex-col items-center text-center md:items-start md:text-left"
             >
               {/* Large Background Number */}
-              <div className="absolute -top-10 -left-4 md:-top-16 md:-left-8 text-7xl md:text-9xl font-heading font-bold text-sky-100 select-none z-0">
+              <div className="absolute -top-10 -left-4 md:-top-16 md:-left-8 text-7xl md:text-9xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-transparent select-none z-0 opacity-60">
                 {step.number}
               </div>
               

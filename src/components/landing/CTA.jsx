@@ -5,7 +5,7 @@ import { Plane } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-br from-primary to-indigo-600">
+    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-slate-50 via-orange-50 to-slate-50">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <motion.div 
@@ -25,14 +25,14 @@ export default function CTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             Ready to fly anywhere?
           </h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
             Join 10,000+ travelers who plan smarter with FlyAnyTrip.
           </p>
           
-          <button className="px-8 py-5 bg-white text-primary hover:bg-slate-50 font-bold rounded-full text-lg shadow-xl shadow-black/10 transition-transform hover:-translate-y-1">
+          <button className="px-8 py-5 bg-gradient-to-r from-orange-400 to-pink-500 text-white font-bold rounded-full text-lg shadow-xl shadow-orange-500/20 transition-transform hover:-translate-y-1">
             Start Planning Free — It&apos;s Free Forever
           </button>
         </motion.div>

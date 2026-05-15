@@ -65,9 +65,9 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="bg-white rounded-3xl p-8 border-2 border-primary shadow-xl shadow-primary/10 flex flex-col relative"
+            className="bg-white rounded-3xl p-8 border-2 border-orange-400 shadow-xl shadow-orange-500/10 flex flex-col relative"
           >
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold tracking-wide">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-400 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-bold tracking-wide">
               MOST POPULAR
             </div>
             <h3 className="font-heading text-2xl font-bold text-slate-900 mb-2">Pro</h3>
@@ -92,7 +92,7 @@ export default function Pricing() {
               ))}
             </ul>
             
-            <button className="w-full py-4 rounded-full font-bold text-white bg-primary hover:bg-primary/90 transition-colors shadow-lg shadow-primary/30">
+            <button className="w-full py-4 rounded-full font-bold text-white bg-gradient-to-r from-orange-400 to-pink-500 hover:opacity-90 transition-opacity shadow-lg shadow-orange-500/30">
               Upgrade to Pro
             </button>
           </motion.div>
