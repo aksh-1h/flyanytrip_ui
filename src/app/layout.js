@@ -1,13 +1,13 @@
-import { DM_Sans, Inter } from "next/font/google";
+import { Outfit, Caveat } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const caveat = Caveat({
+  variable: "--font-caveat",
   subsets: ["latin"],
 });
 
@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${inter.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${caveat.variable}`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

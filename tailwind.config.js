@@ -13,8 +13,9 @@ module.exports = {
         background: '#F8FAFC',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
-        heading: ['var(--font-dm-sans)', 'sans-serif'],
+        sans: ['var(--font-outfit)', 'sans-serif'],
+        heading: ['var(--font-outfit)', 'sans-serif'],
+        script: ['var(--font-caveat)', 'cursive'],
       },
     },
   },
