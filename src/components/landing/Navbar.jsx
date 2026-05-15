@@ -18,53 +18,34 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 w-[90%] max-w-3xl rounded-full ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm py-3"
-          : "bg-transparent py-5"
+          ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-slate-200/20 py-3 px-6 border border-white/50"
+          : "bg-white/30 backdrop-blur-md py-4 px-6 border border-white/30"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-20 flex items-center justify-between">
+      <div className="flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <Plane className="w-6 h-6 text-primary group-hover:-translate-y-1 transition-transform" />
-          <span className="font-heading font-bold text-xl tracking-tight text-slate-900">
+          <Plane className="w-6 h-6 text-primary group-hover:-translate-y-1 transition-transform drop-shadow-sm" />
+          <span className="font-heading font-bold text-xl tracking-tight text-slate-900 drop-shadow-sm">
             FlyAnyTrip
           </span>
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link href="#features" className="text-sm font-medium text-slate-600 hover:text-primary transition-colors">
-            Features
-          </Link>
-          <Link href="#how-it-works" className="text-sm font-medium text-slate-600 hover:text-primary transition-colors">
-            How It Works
-          </Link>
-          <Link href="#pricing" className="text-sm font-medium text-slate-600 hover:text-primary transition-colors">
-            Pricing
-          </Link>
-          <Link href="#blog" className="text-sm font-medium text-slate-600 hover:text-primary transition-colors">
-            Blog
-          </Link>
-        </div>
-
-        {/* Desktop Actions */}
+        {/* Desktop Actions (Minimalist) */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
-            Sign In
-          </button>
-          <button className="bg-primary hover:bg-primary/90 text-white text-sm font-medium py-2 px-5 rounded-full transition-colors shadow-sm hover:shadow-md">
-            Get Started Free
+          <button className="bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-white text-sm font-bold py-2.5 px-6 rounded-full transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
+            Download App
           </button>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-slate-900"
+          className="md:hidden text-slate-900 bg-white/50 p-2 rounded-full backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
