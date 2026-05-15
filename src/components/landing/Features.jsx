@@ -68,7 +68,7 @@ export default function Features() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-[#F8FAFC] border border-transparent rounded-3xl p-8 shadow-sm hover:shadow-md transition-all"
+              className="bg-gradient-to-br from-orange-50/50 to-pink-50/50 border border-orange-100/50 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all"
             >
               <div className={`w-14 h-14 bg-gradient-to-tr ${feature.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
                 {feature.icon}
